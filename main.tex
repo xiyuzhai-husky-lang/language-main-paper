@@ -1,0 +1,68 @@
+%:
+\documentclass[11pt, oneside]{article}   	% use "amsart" instead of "article" for AMSLaTeX format
+\usepackage{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   		% ... or a4paper or a5paper or ... 
+%\geometry{landscape}                		% Activate for rotated page geometry
+%\usepackage[parfill]{parskip}    		% Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}				% Use pdf, png, jpg, or eps§ with pdflatex; use eps in DVI mode
+								% TeX will automatically convert eps --> pdf in pdflatex		
+\usepackage{amssymb}
+\usepackage{diagbox}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{enumerate}
+\theoremstyle{definition}
+\newtheorem*{defn}{Definition}
+\newtheorem*{prop}{Proposition}
+\newtheorem*{eg}{Example}
+\newtheorem*{thm}{Theorem}
+\newtheorem*{corol}{Corollary}
+\newtheorem{ex}{Exercise}[section]
+{\theoremstyle{plain}
+\newtheorem*{rmk}{Remark}
+\newtheorem*{rmks}{Remarks}
+\newtheorem*{lt}{Last time}
+}
+\newtheorem*{lem}{Lemma}
+\usepackage{color}
+\usepackage{CJK}
+\title{the Husky Programming Language}
+\author{Xiyu Zhai, Haochuan Li*, Yonghao Jin*, Teng Geng*, Jian Qian*, Jiang Xin*}
+\date{}							% Activate to display a given date or no date
+
+\begin{document}
+\maketitle
+\tableofcontents
+\abstract {}
+
+\section{Introduction}
+
+The orgin of Husky project dates back to 2017 Spring when Xiyu Zhai wanted to find a theory that explains the success of deep learning in computer vision. After two years of pointless search of a meaningful theory, it occurs to him that deep learning might not be the best form of computation, then he worked for a year with Sasha Rakhlin and Piotr Indyk to find a more efficient model from algorithmic point of views. However, the progress was slow because it was hard to formulate things properly in pure theory. Then Xiyu Zhai went on himself to do some experiments first to confirm some theoretical assumptions. It was then realized (two years ago) that there are some geometric algorithms that could potentially be used to create models that are much more efficient than deep learning with the additional benefits of being fully explainable. However, it turns out that existing programming languages are not good enough for implementing these models. Xiyu Zhai worked on himself for more than two years and created the prototype for a new powerful programming language called husky. It turns out that husky can do much more than just machine learning in computer vision. Then a team of collaborators is formed to work on husky to take it to its full potential:
+
+\footnote[1] {* alphabetical order for now}
+
+All of us contribute to the improvement of language design so that husky shines as a general purpose programming language in various domains.
+
+\section{Husky By Example}
+
+\section{Type System}
+
+\section{Configurable Compilation}
+
+\section{Incremental Evaluation}
+
+\section{Package Management}
+
+\section{Authors' Contributions}
+
+\begin{itemize}
+	\item Xiyu Zhai is reponsible for most of the implementation of husky language
+	\item Teng Geng is the main contributor to Corgi, the package manager of husky
+	\item Yonghao Jin tests husky in various domains
+	\item Jian Qian and Haochuan Li helps a lot in the early days of writing tutorials and documentation...
+	\item Jiang Xin helps with internal implementation and system level optimization
+\end{itemize}
+
+
+
+\end{document}
